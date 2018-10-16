@@ -1,0 +1,19 @@
+<div class="">
+  <label for="">Artist Name:
+    <input [(ngModel)]="album.artist" placehoder="name">
+  </label>
+  <label for="">Album Title:
+    <input [(ngModel)]="album.title" placehoder="name">
+  </label>
+  <label for="">Release Year:
+    <input [(ngModel)]="album.releaseYear" placehoder="name">
+  </label>
+</div>
+
+
+
+<div class="albumInfo">
+  <h2>{{album.artist | uppercase}}</h2>
+  <div class="">Album: <span>{{album.title}}</span></div>
+  <div class="">Year: <span>{{album.releaseYear}}</span></div>
+</div>
